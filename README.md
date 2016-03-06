@@ -2,15 +2,33 @@
 
 ## line profiling
 
-A decorator for easy line profiling. First import the decorator
+A decorator for easy line profiling. First import the decorator.
 
 `from suckless.debug import line_profile`
 
-and use it:
+Use it like this:
 
     @line_profiler
     def foo():
-        pass
+        _ = [one for one in xrange(20000)]
+        time.sleep(10)
+        _ = 100**400
+
+and check the spitted output:
+
+    Timer unit: 1e-06 s
+
+    Total time: 10.0388 s
+    File: foo.py
+    Function: foo at line 8
+
+    Line #      Hits         Time  Per Hit   % Time  Line Contents
+    ==============================================================
+         8                                           @line_profiler
+         9                                           def foo():
+        10     20001        33403      1.7      0.3      _ = [one for one in xrange(20000)]
+        11         1     10004643 10004643.0     99.7      time.sleep(10)
+        12         1          783    783.0      0.0      _ = 100**400
 
 ## pdb & ipdb template filters
 
