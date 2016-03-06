@@ -26,9 +26,8 @@ in template you want to debug load suckless templatetags:
 
 using `pdb` or `ipdb` filter `{{ request|ipdb }}` will drop you into shell:
 
-    > /....../suckless/templatetags/suckless.py(23)ipdb()
-         22         ipdb.set_trace()
-    ---> 23         return x  # <---- this is your filtered variable. Have fun'''
+    22         ipdb.set_trace()
+    ---> 23         return x  # <---- this is your filtered variable. Have fun!
          24     return x
 
     ipdb> x
