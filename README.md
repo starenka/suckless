@@ -1,10 +1,10 @@
-# Unsorted utils for Python & Django
+# Unsorted utils for Python & Django dev
 
 ## line profiling
 
 A decorator for easy line profiling. First import the decorator.
 
-`from suckless.debug import line_profile`
+`from suckless.debug import line_profiler`
 
 Use it like this:
 
