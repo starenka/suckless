@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 
+from memory_profiler import profile as memory_profiler
+
 
 def line_profiler(view=None, extra_view=None):
     # https://djangosnippets.org/snippets/10483/
