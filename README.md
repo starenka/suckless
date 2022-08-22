@@ -53,7 +53,7 @@ Use it like this:
 
 and check the spitted output:
 
-   ```
+```
    python foo.py 
    Timer unit: 1e-06 s
 
@@ -68,7 +68,8 @@ and check the spitted output:
     10     20001       8148.0      0.4      0.1      _ = [one for one in xrange(20000)]
     11         1   10006747.0 10006747.0     99.9      time.sleep(10)
     12         1        392.0    392.0      0.0      _ = 100**400
-    ```
+
+```
 
   
 
